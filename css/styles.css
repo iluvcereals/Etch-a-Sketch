@@ -16,4 +16,6 @@ body {
     width: 740px;
     height: 740px;
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
 }
