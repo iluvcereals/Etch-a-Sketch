@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+let click = true;
 
 
 
@@ -22,6 +23,7 @@ let color = "black";
 const erase = document.querySelector(".erase");
 const draw = document.querySelector(".draw");
 const reset = document.querySelector(".reset");
+const random = document.querySelector(".random");
 
 reset.addEventListener("click", resetGrid);
 erase.addEventListener("click", eraseColor);
@@ -30,11 +32,23 @@ draw.addEventListener("click", e => {
     color = "black";
 });
 
+random.addEventListener("click", randomize)
+
 function eraseColor(){
     color = "white";
 }
 function startDraw(){
-    this.style.backgroundColor = color;
+   if(click){
+    if (color === "random"){
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = color;
+    }
+   }
+}
+
+function randomize(){
+    color = "random";
 }
 
 function resetGrid(){
@@ -43,3 +57,10 @@ function resetGrid(){
         div.style.backgroundColor = "white";
     })
 }
+
+
+container.addEventListener("click", () => {
+    click = !click;
+})
+
+console.log(click);
