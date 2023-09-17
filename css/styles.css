@@ -13,7 +13,6 @@ body {
 }
 
 .left-container {
-    border: 1px solid yellow;
     flex: 1;
     height: 100%;
     display: flex;
@@ -31,7 +30,6 @@ body {
 }
 
 .right-container {
-    border: 1px solid red;
     flex: 1;
     height: 100%;
 }
@@ -39,7 +37,7 @@ body {
 .container {
     width: 740px;
     height: 740px;
-    border: 1px solid black;
+    border: 5px solid black;
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;

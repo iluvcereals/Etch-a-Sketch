@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-let click = true;
+let click = false;
 
 
 
@@ -9,7 +9,7 @@ function setGrid(size){
         let box = document.createElement("div");
         box.style.minHeight = "40px";
         box.style.minWidth = "40px";
-        box.style.border = "1px solid black";
+        box.style.border = "1px solid transparent";
         box.style.flex = "1";
         container.append(box);
         box.addEventListener('mouseover', startDraw);
@@ -59,8 +59,12 @@ function resetGrid(){
 }
 
 
-container.addEventListener("click", () => {
+container.addEventListener("click", e => {
     click = !click;
 })
 
-console.log(click);
+container.addEventListener("mouseleave", e => {
+    click = false;
+})
+
+
