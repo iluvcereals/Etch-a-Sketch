@@ -15,7 +15,6 @@ function createRow(size){
             let box = document.createElement("div");
             div.append(box);
             box.style.border = "1px solid black";
-            box.style.flexDirection = "f;e";
         }
     }
 
