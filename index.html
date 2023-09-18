@@ -8,13 +8,21 @@
     </head>
 
     <body>
-        <div class="left-container">
-            <button class="erase">Erase</button>
-            <button class="draw">Draw</button>
-            <button class="random">Random</button>
-            <button class="reset">Reset</button>
+        <div class="top">
+            <div class="left-container">
+                <button class="erase">Erase</button>
+                <button class="draw">Draw</button>
+                <button class="random">Random</button>
+                <button class="reset">Reset</button>
+            </div>
+            <div class="container"></div>
+            <div class="right-container"></div>
         </div>
-        <div class="container"></div>
-        <div class="right-container"></div>
+        <footer>
+            <label for="gridSize">Grid Size</label>
+            <input type="text" id="gridSize" name="gridSize" required minlength="2" maxlength="2" size="3">
+            <button class="enter">Enter</button>
+            
+        </footer>
     </body>
 </html>

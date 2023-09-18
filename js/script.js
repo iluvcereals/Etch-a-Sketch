@@ -1,8 +1,11 @@
 let gridSize = 16;
 let penColor = "black";
 let click = false;
+
+console.log(gridSize);
 const container = document.querySelector(".container");
 container.addEventListener("click", clickToggle);
+
 
 function clickToggle(){
     click = !click;
@@ -53,12 +56,6 @@ function startPaint(){
 
 
 
-function createGrid(size){
-    for(let i = 0; i < size; i++){
-        createRow(size);
-    }
-    
-}
 
 function createRow(size){
     for (let i = 0; i < size; i++){
@@ -71,8 +68,11 @@ function createRow(size){
             box.addEventListener("mouseover", startPaint);
         }
     }
-
-    
 }
 
-createRow(gridSize);
+createRow(13);
+
+
+
+
+
