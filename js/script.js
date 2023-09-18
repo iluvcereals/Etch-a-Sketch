@@ -11,7 +11,6 @@ function createRow(size){
     for (let i = 0; i < size; i++){
         let div = document.createElement("div");
         container.append(div);
-        div.style.border = "1px solid red";
         for (let j = 0; j < size; j++){
             let box = document.createElement("div");
             div.append(box);
@@ -23,4 +22,4 @@ function createRow(size){
     
 }
 
-createRow(18)
+createRow(64)
