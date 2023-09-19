@@ -34,7 +34,17 @@ body {
 .left-container button{
     height: 50px;
     width: 100px;
+    background-color: slateblue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
 
+}
+
+.left-container button:hover{
+    transform: translatex(3px);
+    transition: 0.3s;
+    background-color: lightseagreen;
 }
 
 .right-container {
