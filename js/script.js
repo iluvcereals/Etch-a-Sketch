@@ -70,7 +70,21 @@ function createRow(size){
     }
 }
 
-createRow(13);
+function emptyGrid(container){
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+}
+const footer = document.querySelector("footer");
+const slider = document.querySelector("#slider");
+const gridSizeValue = footer.querySelector("div");
+slider.oninput = function(){
+    console.log(this.value);
+    emptyGrid(container);
+    createRow(this.value)
+    gridSizeValue.innerHTML = `${this.value}x${this.value}`
+}
+createRow(16);
 
 
 
