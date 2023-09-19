@@ -75,11 +75,10 @@ function emptyGrid(container){
         container.removeChild(container.firstChild);
     }
 }
-const footer = document.querySelector("footer");
+
 const slider = document.querySelector("#slider");
-const gridSizeValue = footer.querySelector("div");
+const gridSizeValue = document.querySelector(".grid-size-value");
 slider.oninput = function(){
-    console.log(this.value);
     emptyGrid(container);
     createRow(this.value)
     gridSizeValue.innerHTML = `${this.value}x${this.value}`
