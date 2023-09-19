@@ -5,6 +5,9 @@ let click = false;
 console.log(gridSize);
 const container = document.querySelector(".container");
 container.addEventListener("click", clickToggle);
+container.addEventListener("mouseleave", e => {
+    click = false;
+})
 
 
 function clickToggle(){
