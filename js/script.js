@@ -73,7 +73,7 @@ function createRow(size){
     }
 }
 
-function emptyGrid(container){
+function emptyGrid(){
     while(container.firstChild){
         container.removeChild(container.firstChild);
     }
@@ -82,7 +82,7 @@ function emptyGrid(container){
 const slider = document.querySelector("#slider");
 const gridSizeValue = document.querySelector(".grid-size-value");
 slider.oninput = function(){
-    emptyGrid(container);
+    emptyGrid();
     createRow(this.value)
     gridSizeValue.innerHTML = `${this.value}x${this.value}`
 }
