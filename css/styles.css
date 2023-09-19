@@ -55,7 +55,7 @@ body {
 .container {
     width: 740px;
     height: 740px;
-    border: 5px solid black;
+    border: 5px solid steelblue;
     background-color: white;
     display: flex;
     margin-inline: 10px;
@@ -75,9 +75,5 @@ footer {
     gap: 5px;
 }
 
-footer > *{
-    display: block;
-    
-}
 
 
