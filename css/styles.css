@@ -45,6 +45,7 @@ body {
     transform: translatex(3px);
     transition: 0.3s;
     background-color: lightseagreen;
+    cursor: pointer;
 }
 
 .right-container {
@@ -59,6 +60,7 @@ body {
     background-color: white;
     display: flex;
     margin-inline: 10px;
+    cursor: crosshair;
 }
 
 .container div{
@@ -74,6 +76,12 @@ footer {
     align-items: center;
     gap: 5px;
 }
+
+#slider {
+    cursor: pointer;
+}
+
+
 
 
 
