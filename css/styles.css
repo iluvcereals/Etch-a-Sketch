@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Chalkduster, fantasy;
 }
 
 
@@ -13,6 +13,15 @@ body {
     height: 100vh;
     background-color: lightcyan;
     flex-direction: column;
+}
+
+header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #ff9999;
+    font-size: 80px;
+    font-weight: 900;
 }
 
 .top {
@@ -75,6 +84,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    flex: 1;
 }
 
 #slider {
